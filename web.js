@@ -3,7 +3,7 @@ var fs = require("fs");
 
 var app = express.createServer(express.logger());
 
-var result = fs.readFileSynce("index.html", function (err, data) {
+var result = fs.readFileSync("index.html", function (err, data) {
   if (err) throw err;
   console.log(data);
 });
